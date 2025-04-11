@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCatalyst - AI-Powered Resume & Cover Letter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">CareerCatalyst</div> 
+        <nav>
+            <a href="#resume-templates">Resume Templates</a>
+     <a href="#cover-letter-examples">Cover Letter Examples</a>
+            <a href="#cover-letter-builders">Cover Letter Builders</a>
+            <a href="#cover-letter-examples">Cover Letter Examples</a>
+            <a href="#blog-categories">Blog Categories</a>
+            <a href="#resources">Resources</a>
+            
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Launch Your Career with AI</h1>
+            <p>Create stunning resumes and cover letters in minutes with CareerCatalyst.</p>
+            <button onclick="scrollToSection('generate')">Get Started</button>
+        </div>
+        <div class="resume-hover">
+            <img src="https://d.novoresume.com/images/doc/general-resume-template.png" alt="Resume 1" class="hover-resume">
+            <img src="https://enhancv.com/_next/static/images/resume1-041174df8af5a7c1cb31889766691714.webp" alt="Resume 2" class="hover-resume">
+            <img src="https://cdn.create.microsoft.com/catalog-assets/en-us/ce343500-4aff-4dfa-b337-57c78459c6ee/thumbnails/616/modern-nursing-resume-orange-modern-geometric-1-1-dbc3e775c6f4.webp" alt="Resume 3" class="hover-resume">
+            <img src="https://gdoc.io/uploads/University-Student-Resume-Template-web1-712x984.webp" alt="Resume 4" class="hover-resume">
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose CareerCatalyst?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="AI analysis">
+                <h3>AI-Powered Analysis</h3>
+                <p>Our AI tailors your resume to match job descriptions perfectly.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn.enhancv.com/images/544/i/aHR0cHM6Ly9jZG4uZW5oYW5jdi5jb20vcHJlZGVmaW5lZC1leGFtcGxlcy9uc015YVYxNkV4QkJ1Zk1RcmpjeGpuVjZLbUFPdkNGU3B0SGxjR3dIL2ltYWdlLnBuZw~~.png" alt="Resume templates">
+                <h3>Modern Templates</h3>
+                <p>Choose from sleek, professional designs that stand out.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1502945015378-0e284762f0ea?q=80&w=2069&auto=format&fit=crop" alt="Fast delivery">
+                <h3>Instant Results</h3>
+                <p>Get your polished resume and cover letter in seconds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="generate" class="generate">
+        <h2>Generate Your Resume & Cover Letter</h2>
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="job-title">Target Job Title</label>
+                <input type="text" id="job-title" placeholder="Software Engineer" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience Summary</label>
+                <textarea id="experience" placeholder="Describe your work experience..." required></textarea>
+            </div>
+            <button type="submit">Generate Now</button>
+        </form>
+        <div id="output" class="output"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 CareerCatalyst. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
